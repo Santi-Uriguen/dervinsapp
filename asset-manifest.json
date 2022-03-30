@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dervinsapp/static/css/main.8e6bbb38.css",
+    "main.js": "/dervinsapp/static/js/main.b5eb2dc5.js",
+    "static/media/compost.jpg": "/dervinsapp/static/media/compost.ceb56f6363766b932296.jpg",
+    "index.html": "/dervinsapp/index.html",
+    "main.8e6bbb38.css.map": "/dervinsapp/static/css/main.8e6bbb38.css.map",
+    "main.b5eb2dc5.js.map": "/dervinsapp/static/js/main.b5eb2dc5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e6bbb38.css",
+    "static/js/main.b5eb2dc5.js"
+  ]
+}
