@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.App {
+  padding: 0 18%;
+}
+
+.App header {
+  height: 15vh;
+  z-index: -15;
+}
+
+.App header .navbar {
+  padding: 1.5% 18%;
+}
+
+.App header .navbar .container {
+  margin-top: 30px;
+}
+
+.App header .navbar .container .navbar-collapse .navbar-nav a {
+  font-weight: 600;
+  font-size: 13px;
+  color: #444;
+  letter-spacing: 1px;
+  margin: 0 5%;
+}
+
+.App header .navbar .container .navbar-collapse .navbar-nav a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #a3238e;
+          text-decoration-color: #a3238e;
+}
+
+.App header .navbar .container .navbar-collapse .navbar-nav .logo-carrito {
+  margin: 0 0 0 150%;
+}
+
+.App header .navbar .container .navbar-collapse .navbar-nav .logo-carrito .vacio {
+  color: #414042;
+  height: 1.3em;
+}
+
+.App header .navbar .container .navbar-collapse .navbar-nav .logo-carrito .lleno {
+  color: #a3238e;
+  -webkit-animation: move 1s;
+          animation: move 1s;
+  height: 1.3em;
+}
+
+.App header .navbar .container .navbar-collapse .navbar-nav .dropdown .dropdown-menu .nav-item a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.App header .navbar .container .navbar-collapse .navbar-nav .dropdown .dropdown-menu .nav-item a:hover,
+.App header .navbar .container .navbar-collapse .navbar-nav .dropdown .dropdown-menu .nav-item a:focus {
+  background-color: #a3238e;
+  color: white;
+}
+
+.App header .navbar .container .navbar-collapse .navbar-nav .dropdown .dropdown-menu .nav-item .dropdown-item:focus,
+.App header .navbar .container .navbar-collapse .navbar-nav .dropdown .dropdown-menu .nav-item .dropdown-item:hover {
+  background-color: #a3238e;
+  color: white;
+}
+
+.App .main {
+  height: 80vh;
+  padding-top: 10%;
+}
+
+.App .main h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #444;
+}
+
+.App .main section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #444;
+}
+
+.App .main section p {
+  line-height: 26px;
+  font-size: 16px;
+  color: #414042;
+  font-weight: 400;
+}
+
+.App .main section .ProdSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.App .main section .ProdSection .ProductCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #a3238e;
+  border-radius: 14px;
+  padding: 2% 5%;
+  margin: 5%;
+}
+
+.App .main section .ProdSection .ProductCard img {
+  width: 100%;
+}
+
+.App .main section .ProdSection .ProductCard .precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .main section .ProdSection .ProductCard .precio h4 {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.App .main section .ProdSection .ProductCard .cantidad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-top: 2%;
+}
+
+.App .main section .ProdSection .ProductCard .cantidad span {
+  width: 100%;
+  background-color: #a3238e;
+  height: 1px;
+  margin: 2% 0;
+}
+
+.App .main section .ProdSection .ProductCard .cantidad h4 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.App .main section .ProdSection .ProductCard .cantidad .buttons {
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .main section .ProdSection .ProductCard .cantidad button {
+  background-color: none;
+  border: 1px solid #a25a96;
+  border-radius: 20px;
+  margin: 0 2%;
+  width: 100%;
+}
+
+.App .main section .ProdSection .ProductCard .cantidad button:hover {
+  background-color: #a3238e;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  color: white;
+}
+
+.App .main .fruto-section {
+  padding-bottom: 10%;
+}
+
+.App .main .cartInactive {
+  display: none;
+}
+
+.App .mainHidden {
+  height: 10px;
+  overflow: hidden;
+}
+
+.App .mainHidden .cartActive {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  z-index: 1;
+  background: white;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .mainHidden .cartActive .typeofClient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1%;
+  width: 100%;
+  font-size: 14px;
+}
+
+.App .mainHidden .cartActive .typeofClient div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2%;
+  width: 7%;
+}
+
+.App .mainHidden .cartActive .typeofClient div label {
+  margin-left: 5%;
+}
+
+.App .mainHidden .cartActive .productsCart {
+  width: 30%;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .ProdInCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .ProdInCart .title {
+  text-align: left;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .ProdInCart div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .ProdInCart div img {
+  width: 20%;
+  border-radius: 14px;
+  margin: 1% 5% 1% 0;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .ProdInCart div p {
+  width: 50%;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .ProdInCart div div {
+  width: 100%;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .ProdInCart div div p {
+  width: 100%;
+  text-align: end;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .ProdInCart span {
+  width: 100%;
+  background-color: #a3238e;
+  height: 1px;
+  margin: 2% 0;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart h4 {
+  text-align: end;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .confirmButton {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 15%;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .confirmButton button {
+  background-color: none;
+  border: 1px solid #a3238e;
+  border-radius: 20px;
+  padding: 2% 5%;
+  width: 100%;
+}
+
+.App .mainHidden .cartActive .productsCart .fullCart .confirmButton button:hover {
+  background-color: #a3238e;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  color: white;
+}
+
+.App footer {
+  height: 5vh;
+  position: fixed;
+  background: white;
+  width: 100%;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=App.css.map */
