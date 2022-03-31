@@ -1,6 +1,6 @@
 {
-  "name": "dervinsapp",
   "homepage":"https://santi-uriguen.github.io/dervinsapp/",
+  "name": "dervinsapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
